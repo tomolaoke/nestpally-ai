@@ -1,0 +1,44 @@
+<!-- public/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nestpally AI - Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Register</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <form id="registerForm">
+            <label for="role">I am a:</label>
+            <select id="role" name="role" required>
+                <option value="">Select Role</option>
+                <option value="user">Student/Young Professional</option>
+                <option value="estate_agent">Estate Agent</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="registerMessage"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nestpally AI</p>
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html>

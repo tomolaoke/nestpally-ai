@@ -1,0 +1,62 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nestpally AI - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <a href="apartments.html">View Apartments</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="profileSection">
+            <h2>Your Profile</h2>
+            <p id="profileInfo"></p>
+            <button id="editProfile">Edit Profile</button>
+        </section>
+
+        <section id="matchingSection">
+            <h2>Matched Roommates and Apartments</h2>
+            <div id="matches">
+                <!-- Display matched roommates and apartments here -->
+            </div>
+        </section>
+
+        <section id="listApartmentSection">
+            <h2>List a New Apartment</h2>
+            <form id="listApartmentForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="availableRooms">Available Rooms:</label>
+                <input type="number" id="availableRooms" name="availableRooms" required>
+
+                <label for="amenities">Amenities (comma separated):</label>
+                <input type="text" id="amenities" name="amenities">
+
+                <button type="submit">List Apartment</button>
+            </form>
+            <p id="listApartmentMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nestpally AI</p>
+    </footer>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
